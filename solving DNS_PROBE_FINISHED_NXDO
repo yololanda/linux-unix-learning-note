@@ -1,0 +1,8 @@
+#open dhcp client in linux
+sudo nano /etc/dhcp/dhclient.conf
+
+#add this line at the end, leave mark to indetify it for future reference
+supersede domain-name-servers 8.8.8.8;
+
+#Restart the Network / NIC
+sudo service network-manager restart

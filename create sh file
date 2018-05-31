@@ -1,0 +1,11 @@
+//put his tag in inside file.sh
+#!/bin/bash
+
+//for example to turn off mysql and wifi
+sudo service mysql stop && sudo nmcli radio wifi off
+
+//put privillage access to the file, chmod +x for execute or chmod 777 either way is fine.
+chmod +x file.sh
+
+//lastly, go to terminal type source file.sh, this will provision the changes on the file into linux OS.
+source file.sh

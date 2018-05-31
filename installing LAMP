@@ -1,0 +1,31 @@
+https://howtoubuntu.org/how-to-install-lamp-on-ubuntu
+
+
+check mysql run or not
+
+ps ax | grep mysql
+
+
+//find port
+netstat -lpn | grep ":80"
+
+//kill port
+fuser -k -n tcp 80
+
+//=========================================================================
+	FOR LINUX UBUNTU, DEFAULT PASS MYSQL IS EMPTY AND IT IS AUTH_SOCKET
+		THEREFORE, NEED TO BE CONVERTED INTO MYSQL_NATIVE_PASSWORD
+//========================================================================
+link : https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
+
+
+
+
+//========================================================================
+	Change UBUNTU MYSQL DEFAULT PASS
+//========================================================================
+sudo mysql -uroot -p
+use mysql;
+update user set authentication_string=password('newpass') where user='root';
+FLUSH PRIVILEGES; //this is like provision, or make it happen
+exit;

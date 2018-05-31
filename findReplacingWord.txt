@@ -1,0 +1,10 @@
+sudo sed -i 's/lampp/lamp/g' config.php
+
+sed = Stream EDitor
+-i = in-place(example save back to the original file)
+the command string details:
+	s = the substitute command/ command to replace
+        lampp = is the word that need to be changed
+	lamp  = is the word that we need
+	g     = global, to tell the command to execute all in the file rather than singular word.
+	config.php = the file name.

@@ -1,0 +1,8 @@
+//to move file 
+mv filedir/filename filelocation
+
+//to rename file
+mv filedir/filenae filedir/newname
+
+//to move entire file from a folder to another folder '~' here is home path
+mv -v ~/downloads/* ~/vidoes/

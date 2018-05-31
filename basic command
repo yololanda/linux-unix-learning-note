@@ -1,0 +1,2 @@
+#turn off radio wifi
+nmcli radio wifi off
