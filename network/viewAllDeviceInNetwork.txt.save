@@ -1,0 +1,5 @@
+#install arp
+sudo apt-get install arp-scan
+
+#instruct the NIC into arp, etho is your NIC, if can be different. Use ifconfig
+sudo arp-scan --interface=etho --localnet

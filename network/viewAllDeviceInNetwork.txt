@@ -1,0 +1,6 @@
+#instll arp-scan
+sudo apt-get install arp-scan
+
+#initate arp-scan, eth=NIC, check ifconfig
+sudo arp-scan --interface=eth0 --localnet
+

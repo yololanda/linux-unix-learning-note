@@ -1,0 +1,5 @@
+#to see list input of hardware
+	xinput list
+
+#this command will list all the driver, for example trackpad id=14 and to disable it please type command below
+	xinput disable 14

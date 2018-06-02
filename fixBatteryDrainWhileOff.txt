@@ -1,0 +1,13 @@
+// to fix battery drain while poweroff in UBUNTU
+
+http://www.hecticgeek.com/2012/09/disabling-wake-on-lan-in-ubuntu-might-save-a-tiny-bit-of-power-on-your-laptop/
+
+// this will shutdown wake-on feature on ethernet/wifi adapter
+// to see list of network interface use ifconfig, eth0 here same as eno1
+// to see the saved configuration
+	sudo gedit /etc/rc.local
+		or
+	sudo nano /etc/rc.local
+
+// to see wake-on setting in the device. If g = on, d = disable.
+	sudo ethtool eth0 | grep Wake-on
